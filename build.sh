@@ -1,8 +1,7 @@
 #!/bin/bash
 
-cd /tmp
 /ami-creator/ami_creator/ami_creator.py -c /centos7.ks -n centos7
-image=/tmp/centos7.img
+image=centos7.img
 mount="$(mktemp -d)"
 mount -o loop "$image" "$mount"
 set +e
