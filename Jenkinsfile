@@ -14,7 +14,7 @@ sudo docker rm centos7-32-fs-build-run
 sudo docker rmi -f centos7-32-fs-build
 cd centos7-32-base
 cp /tmp/centos7.tar.bz2 .
-sudo docker build -t docker-images.eng.spoken.com/centos7-32-base
+sudo docker build -t docker-images.eng.spoken.com/centos7-32-base .
 sudo docker push docker-images.eng.spoken.com/centos7-32-base
 '''
             }
